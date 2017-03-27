@@ -76,8 +76,8 @@ $(function() {
                 variableWidth: true,
                 arrows: true,
                 dots: true,
-                prevArrow: '<button type="button" class="slick-prev">&#9001;&nbsp;&nbsp;</button>',
-                nextArrow: '<button type="button" class="slick-next">&nbsp;&nbsp;&#9002;</button>',
+                prevArrow: '<button type="button" class="slick-prev">&#x3c;</button>',
+                nextArrow: '<button type="button" class="slick-next">&#x3e;</button>',
                 dotsClass: 'verisol_inline-list',
                 appendDots: $(pager),
                 customPaging: function(slider, i) {
