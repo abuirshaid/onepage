@@ -1,0 +1,129 @@
+button.slick-next.slick-arrow,
+button.slick-prev.slick-arrow {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    padding: 0px 8px;
+    margin: 0;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    border: solid 1px #999;
+    border-radius: 20px;
+    color: #999!important;
+    background-color: #fff
+}
+
+button.slick-next.slick-arrow:hover,
+button.slick-prev.slick-arrow:hover {
+    background-color: #e42e32;
+    border-color: #e42e32 !important;
+    ;
+    color: #fff !important;
+}
+
+button.slick-prev.slick-arrow {
+    left: 45%
+}
+
+button.slick-next.slick-arrow {
+    right: 45%
+}
+
+.slick-slider {
+    display: flex!important
+}
+
+@media screen and (max-width: 1059px) {
+    button.slick-prev.slick-arrow {
+        left: 37%
+    }
+    button.slick-next.slick-arrow {
+        right: 37%
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .verisol_section h2 {
+        font-size: 30px!important
+    }
+    .verisol_slide {
+        width: 85vw!important
+    }
+    .VerizonSolutionsFeatureGrid ._heading {
+        line-height: 1;
+        font-size: 50px
+    }
+}
+
+.popup-select {
+    margin-bottom: 0.8em;
+    border-radius: 4px;
+    padding: 0.5em 0.5em;
+    height: 37px;
+    background: #fff;
+    border: 1px solid #e2e5e8;
+}
+
+.popup-select {
+    color: #999;
+}
+
+.popup-select:active,
+.popup-select:hover {
+    box-shadow: none;
+    border: 0;
+    border: 1px solid #C6CCD1;
+}
+
+.popup-select:focus {
+    color: black;
+    outline: #4C89F4 solid 1px;
+}
+
+.VerizonSolutionsPopoverForm ._panel ._close {
+    position: relative;
+    float: right;
+}
+
+.VerizonSolutionsPopoverForm ._panel {
+    background-color: white;
+    border-radius: 4px;
+}
+
+.VerizonSolutionsPopoverForm ._panel ._button {
+    color: #e42e32;
+    background-color: white;
+    border: 1px solid #e42e32;
+    border-radius: 4px;
+        margin-top: 0.6em;
+
+}
+
+.VerizonSolutionsPopoverForm ._panel ._close {
+    line-height: 1.8em;
+}
+
+button:active,
+input[type="submit"]:active {
+    box-shadow: inset 0 0 12px #999;
+}
+/*
+button.slick-next.slick-arrow:focus,
+button.slick-prev.slick-arrow:focus {
+    outline: none;
+    border: 1px solid #e42e32;
+    color: #e42e32 !important;
+}
+
+button.slick-next.slick-arrow,
+button.slick-prev.slick-arrow {
+    color: #e42e32;
+    background-color: #fff;
+}
+
+.VerizonSolutionsPopoverForm ._panel ._button:focus .VerizonSolutionsPopoverForm ._panel ._button:active {
+    color: white;
+    background-color: #e42e32;
+}*/

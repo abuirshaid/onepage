@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Fleetmatics</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="/stylesheets/normalize.css" rel="stylesheet" />
+    <link href="/stylesheets/verizon-solutions.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="//use.typekit.net/xml3cpm.js"></script>
+    <script>try { Typekit.load({ async: true }); } catch (e) {}</script>
+
+    <script type="text/javascript">
+      /*! modernizr 3.3.1 (Custom Build) | MIT *
+       * https://modernizr.com/download/?-cssgradients-flexbox-setclasses !*/
+      !function(e,n,t){function r(e,n){return typeof e===n}function o(){var e,n,t,o,s,i,a;for(var f in w)if(w.hasOwnProperty(f)){if(e=[],n=w[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(o=r(n.fn,"function")?n.fn():n.fn,s=0;s<e.length;s++)i=e[s],a=i.split("."),1===a.length?Modernizr[a[0]]=o:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=o),y.push((o?"":"no-")+a.join("-"))}}function s(e){var n=C.className,t=Modernizr._config.classPrefix||"";if(_&&(n=n.baseVal),Modernizr._config.enableJSClass){var r=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(r,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),_?C.className.baseVal=n:C.className=n)}function i(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):_?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function a(e,n){return!!~(""+e).indexOf(n)}function f(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function l(e,n){return function(){return e.apply(n,arguments)}}function u(e,n,t){var o;for(var s in e)if(e[s]in n)return t===!1?e[s]:(o=n[e[s]],r(o,"function")?l(o,t||n):o);return!1}function d(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function c(){var e=n.body;return e||(e=i(_?"svg":"body"),e.fake=!0),e}function p(e,t,r,o){var s,a,f,l,u="modernizr",d=i("div"),p=c();if(parseInt(r,10))for(;r--;)f=i("div"),f.id=o?o[r]:u+(r+1),d.appendChild(f);return s=i("style"),s.type="text/css",s.id="s"+u,(p.fake?p:d).appendChild(s),p.appendChild(d),s.styleSheet?s.styleSheet.cssText=e:s.appendChild(n.createTextNode(e)),d.id=u,p.fake&&(p.style.background="",p.style.overflow="hidden",l=C.style.overflow,C.style.overflow="hidden",C.appendChild(p)),a=t(d,e),p.fake?(p.parentNode.removeChild(p),C.style.overflow=l,C.offsetHeight):d.parentNode.removeChild(d),!!a}function m(n,r){var o=n.length;if("CSS"in e&&"supports"in e.CSS){for(;o--;)if(e.CSS.supports(d(n[o]),r))return!0;return!1}if("CSSSupportsRule"in e){for(var s=[];o--;)s.push("("+d(n[o])+":"+r+")");return s=s.join(" or "),p("@supports ("+s+") { #modernizr { position: absolute; } }",function(e){return"absolute"==getComputedStyle(e,null).position})}return t}function g(e,n,o,s){function l(){d&&(delete E.style,delete E.modElem)}if(s=r(s,"undefined")?!1:s,!r(o,"undefined")){var u=m(e,o);if(!r(u,"undefined"))return u}for(var d,c,p,g,h,v=["modernizr","tspan","samp"];!E.style&&v.length;)d=!0,E.modElem=i(v.shift()),E.style=E.modElem.style;for(p=e.length,c=0;p>c;c++)if(g=e[c],h=E.style[g],a(g,"-")&&(g=f(g)),E.style[g]!==t){if(s||r(o,"undefined"))return l(),"pfx"==n?g:!0;try{E.style[g]=o}catch(y){}if(E.style[g]!=h)return l(),"pfx"==n?g:!0}return l(),!1}function h(e,n,t,o,s){var i=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+P.join(i+" ")+i).split(" ");return r(n,"string")||r(n,"undefined")?g(a,n,o,s):(a=(e+" "+k.join(i+" ")+i).split(" "),u(a,n,t))}function v(e,n,r){return h(e,t,t,n,r)}var y=[],w=[],x={_version:"3.3.1",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){w.push({name:e,fn:n,options:t})},addAsyncTest:function(e){w.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=x,Modernizr=new Modernizr;var C=n.documentElement,_="svg"===C.nodeName.toLowerCase(),b=x._config.usePrefixes?" -webkit- -moz- -o- -ms- ".split(" "):["",""];x._prefixes=b,Modernizr.addTest("cssgradients",function(){for(var e,n="background-image:",t="gradient(linear,left top,right bottom,from(#9f9),to(white));",r="",o=0,s=b.length-1;s>o;o++)e=0===o?"to ":"",r+=n+b[o]+"linear-gradient("+e+"left top, #9f9, white);";Modernizr._config.usePrefixes&&(r+=n+"-webkit-"+t);var a=i("a"),f=a.style;return f.cssText=r,(""+f.backgroundImage).indexOf("gradient")>-1});var S="Moz O ms Webkit",P=x._config.usePrefixes?S.split(" "):[];x._cssomPrefixes=P;var k=x._config.usePrefixes?S.toLowerCase().split(" "):[];x._domPrefixes=k;var z={elem:i("modernizr")};Modernizr._q.push(function(){delete z.elem});var E={style:z.elem.style};Modernizr._q.unshift(function(){delete E.style}),x.testAllProps=h,x.testAllProps=v,Modernizr.addTest("flexbox",v("flexBasis","1px",!0)),o(),s(y),delete x.addTest,delete x.addAsyncTest;for(var T=0;T<Modernizr._q.length;T++)Modernizr._q[T]();e.Modernizr=Modernizr}(window,document);
+    </script>
+  </head>
+
+  <body>
+
+    
+<header class="VerizonSolutionsHero -no-brands">
+    <img src="/images/logo-fleetmatics-reversed.svg" class="_logo -fleetmatics" alt="Fleetmatics" />
+  <div class="_title-block">
+    <div class="_headline">  Fleet management software.
+</div>
+    <div class="_overview">  Innovative fleet tracking software from the largest telematics provider in the country. <span class="tablet-up-only">More than
+  just dots on a map, you can use advanced GPS tracking to seamlessly monitor and manage your entire
+  mobile workforce.</span>
+</div>
+  </div>
+  <a href="https://www.fleetmatics.com/reveal-demo" class="_button -arrow">Get a demo</a>
+  <div class="_brands">
+    <div class="_note">
+      Telogis, Fleetmatics and Networkfleet have come together.
+    </div>
+    <img src="/images/verizon-solutions/hero-logos_2x.png" class="_logos" alt="Telogis - Fleetmatics - Networkfleet" />
+  </div>
+</header>
+
+<div class="VerizonSolutionsNav" data-navbar-footprint>
+  <nav class="_navbar" data-navbar>
+    <div class="verisol_ultrawide">
+        <img src="/images/logo-fleetmatics.svg" class="_logo -fleetmatics" alt="Fleetmatics" />
+      <a href="https://www.fleetmatics.com/reveal-demo" class="_button">Get a demo</a>
+    </div>
+  </nav>
+</div>
+
+<section class="verisol_section" id="intro">
+  <div class="content-wrapper-wide">
+    <div class="verisol_sub-section">
+      <div class="verisol_graphic -devices"></div>
+    </div>
+    <div class="four-column-layout verisol_sub-section">
+      <div class="column verisol_iconic -icon-safety">
+          <h3>Safety</h3>
+  <p>
+    Proactive tools to coach drivers, minimize risks and customizable dashboards to monitor progress.
+  </p>
+
+      </div>
+      <div class="column verisol_iconic -icon-service">
+          <h3>Service</h3>
+  <p>
+    Exceed customer expectations with super quick response times, flexible schedules and better reporting.
+  </p>
+
+      </div>
+      <div class="column verisol_iconic -icon-productivity">
+          <h3>Productivity</h3>
+  <p>
+    Validate and verify your team's productivity, reduce overtime and make better use of your assets.
+  </p>
+
+      </div>
+      <div class="column verisol_iconic -icon-fuel">
+          <h3>Fuel</h3>
+  <p>
+    With tools to manage wasteful driving, unnecessary idling and fuel card use you'll see major savings.
+  </p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="VerizonSolutionsCustomersStrip">
+  <div class="content-wrapper-wide">
+    <div class="_heading">
+      Used by mobile workforces around the world
+    </div>
+    <div class="_logos">
+      <img src="/images/verizon-solutions/logo-trugreen_2x.png" width="116" height="41" alt="Trugreen" />
+      <img src="/images/verizon-solutions/logo-virgin_2x.png" width="87" height="55" alt="Virgin Media" />
+      <img src="/images/verizon-solutions/logo-time_2x.png" width="107" height="43" alt="Time Warner Cable" />
+      <img src="/images/verizon-solutions/logo-schneider_2x.png" width="113" height="22" alt="Schneider" />
+    </div>
+  </div>
+</section>
+
+<section class="verisol_section" id="visibility">
+  <div class="content-wrapper-wide">
+    <div class="verisol_sub-section">
+        <h2>Better fleet visibility</h2>
+  <p class="verisol_centered-text-block -wide">
+    How much is going on in your fleet that you don’t know about it? Stupid question, right? You don’t
+    know what you don’t know. We can help change that and provide you with a 360-degree view of your
+    fleet’s daily operations. Know what's going on in the field real-time so you can dispatch more
+    efficiently, improve customer service and reduce time spent calling drivers for updates.
+  </p>
+
+      <a href="https://www.fleetmatics.com/reveal-demo" class="_button">See it for yourself</a>
+    </div>
+  </div>
+  <div class="content-wrapper-wide tablet-up-only verisol_pager" id="visibilityPager"></div>
+  <div class="verisol_slides -offset" id="visibilitySlides">
+    <div class="verisol_sub-section verisol_slide" data-slide-label="Easy-to-use dashboards">
+      <div class="verisol_graphic -slide-1-1"></div>
+        <h3>Easy-to-use dashboards</h3>
+  <p>
+    See important trends by team, department or across the entire fleet. Easily review your progress
+    towards achieving and maintaining KPIs.
+  </p>
+
+    </div>
+    <div class="verisol_sub-section verisol_slide" data-slide-label="Detailed maps">
+      <div class="verisol_graphic -slide-1-2"></div>
+        <h3>Detailed maps</h3>
+  <p>
+    High-resolution maps with smart clustering and detail on demand provide a simple, yet powerful,
+    tool to view the real-time activity and current status of all your vehicles, workers and mobile
+    equipment, no matter where they are.
+  </p>
+
+    </div>
+    <div class="verisol_sub-section verisol_slide" data-slide-label="Productivity / utilization">
+      <div class="verisol_graphic -slide-1-3"></div>
+        <h3>Improved productivity through better utilization</h3>
+  <p>
+    The first step to improving productivity is
+    being able to take stock of what you have and how it’s being used. Better fleet visibility allows
+    you improve asset utilization, allowing you to get more done with fewer resources.
+  </p>
+
+    </div>
+    <div class="verisol_sub-section verisol_slide" data-slide-label="Access from anywhere">
+      <div class="verisol_graphic -slide-1-4"></div>
+        <h3>Access from anywhere</h3>
+  <p>
+    The industry’s fastest web-based maps are accessible from any device with an internet connection.
+    Supervisors or drivers out in the field can see the same view a manager has back in the office.
+  </p>
+
+    </div>
+  </div>
+  </div>
+</section>
+
+<aside class="VerizonSolutionsCustomerQuote -border">
+  <div class="_container content-wrapper-wide">
+    <img src="/images/verizon-solutions/avatar-mark.jpg" class="_avatar" alt="Avatar mark" />
+    <div class="_testimonial">
+      <div class="_quote">
+        &ldquo;It all pays for itself. I can tell you that I think it is definitely worth
+        the&nbsp;money.&rdquo;
+      </div>
+      <div class="_attrib">
+        Mark Wissler &ndash; Dallas Plumbing Company
+      </div>
+    </div>
+    <a href="https://www.fleetmatics.com/reveal-demo" class="_button">Request a demo</a>
+  </div>
+</aside>
+
+<section class="verisol_section -darker verisol_graph-line-bg" id="tco">
+  <div class="content-wrapper-wide">
+    <div class="verisol_sub-section">
+        <h2>Look after your assets to lower TCO</h2>
+  <p class="verisol_centered-text-block">
+    Constant monitoring of your valuable assets can be used to make sure your vehicles, machinery and
+    equipment are being looked after, improving productivity, maximizing efficiency, reducing breakdowns
+    and lowering the Total Cost of Ownership (TCO).
+  </p>
+
+      <a href="https://www.fleetmatics.com/reveal-demo" class="_button">Find out how</a>
+    </div>
+  </div>
+  <div class="content-wrapper-wide tablet-up-only verisol_pager" id="tcoPager"></div>
+  <div class="verisol_slides -offset" id="tcoSlides">
+    <div class="verisol_sub-section verisol_slide" data-slide-label="Usage reporting">
+      <div class="verisol_graphic -slide-2-1"></div>
+        <h3>Usage reporting</h3>
+  <p>
+    Usage reports can detail how a vehicle is being driven or machinery used to make sure recommended
+    operating procedures are being followed and assets are not being put under too much stress.
+  </p>
+
+    </div>
+    <div class="verisol_sub-section verisol_slide" data-slide-label="Hardware diagnostic alerts">
+      <div class="verisol_graphic -slide-2-2"></div>
+        <h3>Hardware diagnostic alerts</h3>
+  <p>
+    Receive alerts for relating to the health of an asset’s current condition. A wide range of
+    trouble codes can be reported on, with the option for sharing this information directly with
+    your local service center.
+  </p>
+
+    </div>
+    <div class="verisol_sub-section verisol_slide" data-slide-label="Automated maintenance">
+      <div class="verisol_graphic -slide-2-3"></div>
+        <h3>Maintenance scheduling</h3>
+  <p>
+    Send scheduled service notifications to drivers based on mileage or engine hours to make sure
+    equipment is being serviced at the correct intervals. Data relating to the real-life condition
+    of the vehicle can be used to eliminate unnecessary servicing.
+  </p>
+
+    </div>
+    <div class="verisol_sub-section verisol_slide" data-slide-label="Parts management">
+      <div class="verisol_graphic -slide-2-4"></div>
+        <h3>Parts management</h3>
+  <p>
+    Know what parts you need before you need them. Reduce downtime and improve warranty recovery
+    with accurate records. Historical reporting can improve the accuracy of future parts orders.
+  </p>
+
+    </div>
+    <div class="verisol_sub-section verisol_slide" data-slide-label="Better resale">
+      <div class="verisol_graphic -slide-2-5"></div>
+        <h3>Better resale</h3>
+  <p>
+    Detailed maintenance reporting helps improve the dollar resale of a vehicle, as well as
+    maximizing the useful life of the vehicle.
+  </p>
+
+    </div>
+  </div>
+  <div class="content-wrapper-wide">
+    <br><br>
+      <p class="verisol_bigtext">
+    See how you can help achieve positive ROI <strong>within 120 days</strong>
+  </p>
+  <a href="https://www.fleetmatics.com/reveal-demo" class="verisol_button -arrow">Request demo</a>
+
+  </div>
+</section>
+
+<section class="verisol_section -flush-bottom">
+  <div class="content-wrapper-wide">
+    <div class="verisol_sub-section">
+        <h2>Better safety and security for <br class="tablet-up-only">workers and assets</h2>
+  <p class="verisol_centered-text-block">
+    Reduce unauthorized vehicle use and can quickly recover stolen vehicles. Curb unsafe driving habits
+    before they lead to more serious issues.
+  </p>
+
+        <h3>If something goes missing, you’ll know about it</h3>
+  <p class="verisol_centered-text-block-narrow">
+    Monitor high-value assets around-the-clock and take swift action to recover stolen assets or
+    manage unauthorized use of vehicles. Driver ID technology helps your team take responsibility
+    for company assets and the whereabouts of people on your teams. Insurance claims and asset
+    recovery are easy with a simple history look-up to show exactly what happened where.
+  </p>
+
+    </div>
+    <div class="verisol_graphic -safety"></div>
+  </div>
+  <div class="content-wrapper-wide">
+    <div class="verisol_sub-section verisol_custom-positioned-text-block-1">
+        <h3>Real-time driver education tools</h3>
+  <p>
+    Use the power of gamification and in-cab alerts to help drivers perform at their best each and
+    every day. Drivers can compete for positions on the company leaderboard by driving safely,
+    economically and efficiently.
+  </p>
+  <a href="https://www.fleetmatics.com/reveal-demo" class="verisol_standalone-link">Show me how.</a>
+
+    </div>
+    <div class="verisol_graphic -coach-man verisol_custom-positioned-graphic">
+    </div>
+  </div>
+</section>
+
+<aside class="VerizonSolutionsCustomerQuote -darker">
+  <div class="_container content-wrapper-wide">
+    <img src="/images/verizon-solutions/avatar-joanne.jpg" class="_avatar" alt="Avatar joanne" />
+    <div class="_testimonial">
+      <div class="_quote">
+        &ldquo;It cut down a lot of labor time for the technicians in the field, and for us in the
+        office.&rdquo;
+      </div>
+      <div class="_attrib">
+        Joanne Stahlman &ndash; Stahlman-England Irrigation
+      </div>
+    </div>
+    <a href="https://www.fleetmatics.com/reveal-demo" class="_button">Learn how</a>
+  </div>
+</aside>
+
+<section class="verisol_section">
+  <div class="content-wrapper-wide">
+    <div class="verisol_sub-section">
+        <h2>All makes, models and assets accepted</h2>
+  <p class="verisol_centered-text-block">
+    One of the things that our customers love about us is our ability to adapt – whatever they need we have the smarts, experience and industry partners to make it happen. When it comes to hardware we've made it easy - we work with the assets you've got but we also have OEM partners that can mean zero installation costs and no downtime. Our partnerships with Ford, GM, Volvo Trucks, Mack, Hino, Isuzu, and others, mean the hardware is built in, giving you richer diagnostic data and instant activation from day one.
+  </p>
+
+    </div>
+    <div class="verisol_oem-logos">
+      <img src="/images/verizon-solutions/logo-ford_2x.png" width="117" alt="Ford" />
+      <img src="/images/verizon-solutions/logo-gm_2x.png" width="205" alt="GM Fleet" />
+      <img src="/images/verizon-solutions/logo-mack_2x.png" width="113" alt="Mack" />
+      <img src="/images/verizon-solutions/logo-hino_2x.png" width="96" alt="Hino Trucks" />
+      <img src="/images/verizon-solutions/logo-manitowoc_2x.png" width="148" alt="Manitowoc" />
+      <img src="/images/verizon-solutions/logo-isuzu_2x.png" width="117" alt="Isuzu" />
+      <img src="/images/verizon-solutions/logo-volvo_2x.png" width="69" alt="Volvo" />
+      <img src="/images/verizon-solutions/logo-jd_2x.png" width="68" alt="John Deere" />
+      <img src="/images/verizon-solutions/logo-freightliner_2x.png" width="149" alt="Freightliner" />
+    </div>
+  </div>
+</section>
+
+<section class="verisol_section">
+  <div class="content-wrapper-wide">
+    <div class="verisol_sub-section">
+        <h2>A higher standard of customer service</h2>
+  <p class="verisol_centered-text-block">
+    You can get to customers faster and respond quickly to customer emergencies. Provide historical
+    proof time onsite and make service calls more efficient.
+  </p>
+
+    </div>
+    <div class="verisol_sub-section">
+        <ul class="verisol_tick-list">
+    <li>Get to customers faster and improve response times</li>
+    <li>Beat your competition to prospects</li>
+    <li>Provide historical proof of service</li>
+    <li>Allow customers to track vehicles from your website</li>
+    <li>Make service calls more efficient by dispatching the right vehicle and personnel the first time</li>
+    <li>Provide more accurate delivery estimates and ETA updates by SMS</li>
+  </ul>
+
+    </div>
+    <div class="verisol_sub-section verisol_graphic -customer"></div>
+  </div>
+</section>
+
+<section class="verisol_section -darker">
+  <div class="content-wrapper-wide">
+    <div class="verisol_sub-section">
+        <h2>Software that pays for itself</h2>
+  <p class="verisol_centered-text-block">
+    Our software can help you uncover hidden costs while revealing potential for greater productivity
+    and efficiency. In fact, most fleets see a positive ROI within 120 days. From planning through
+    implementation, integration and training, we're dedicated to your results, your ROI and your
+    bottom line.
+  </p>
+
+    </div>
+  </div>
+  <div class="content-wrapper-wide two-column-layout">
+    <div class="verisol_sub-section verisol_custom-positioned-text-block-2 column">
+        <h3>Smart dashboards and reporting tools</h3>
+  <p>
+    You can’t manage what you’re not measuring. Use our smart dashboards and reporting tools to analyze
+    trends, and compare against industry benchmarks. What’s giving you a good return, and what isn’t?
+    You’ll soon know where you can save, and operate a more efficient fleet.
+  </p>
+  <a href="https://www.fleetmatics.com/reveal-demo" class="verisol_standalone-link">Get started with a live demo.</a>
+
+    </div>
+    <div class="verisol_sub-section column">
+      <div class="verisol_graphic -dashboard"></div>
+    </div>
+  </div>
+</section>
+
+<div class="VerizonSolutionsCaseStudy">
+  <div class="content-wrapper-wide">
+    <div class="_video">
+      <script src="//fast.wistia.com/embed/medias/t8uttrhry7.jsonp" async></script><script src="//fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_embed wistia_async_t8uttrhry7 videoFoam=true">&nbsp;</div>
+    </div>
+    <div class="_quote">
+        &ldquo;The frosting on the cake was having the system pay for itself.&rdquo;
+
+    </div>
+    <img src="/images/verizon-solutions/logo-rfr.png" alt="Rain for Rent" class="_logo" />
+  </div>
+</div>
+
+<section class="VerizonSolutionsFeatureGrid">
+  <div class="content-wrapper-wide">
+    <h2 class="_heading">More features. More flexibility.</h2>
+    <ul class="_grid-container">
+      <li class="icon-hierarchy">
+  <h4>Custom Hierarchies</h4>
+  <p>Set up custom&shy;ized access and security levels to meet the needs of your organization. Create unlimited users and assign them to specific groups for easier management.
+</p>
+</li>
+
+      <li class="icon-gears">
+  <h4>API Integration</h4>
+  <p>Integrate with other enterprise systems such as SAP using standard
+      web-based APIs (REST, SOAP etc.). Improve the speed and accuracy of data collection for your payroll, HR and CRM solutions.</p>
+</li>
+
+      <li class="icon-oil-can">
+  <h4>Smarter Maintenance</h4>
+  <p>Track vehicle maintenance to easily generate alerts for your own service department or local dealer. Improve the accuracy of your PM program to reduce costs.</p>
+</li>
+
+      <li class="icon-light-bulb-incandescent">
+  <h4>Powerfully Simple</h4>
+  <p>Never miss a thing with patented technology that cleverly groups nearby assets. Simplify management of even large fleets and see critical fleet data at a glance.</p>
+</li>
+
+      <li class="icon-device-sms">
+  <h4>Real-time Alerts</h4>
+  <p>Choose the condition that triggers the alert (speeding, idling, harsh
+    braking, etc.) and who receives it. For example, if you want drivers to slow down in the rain or snow, trigger a lower-limit speeding alert when the vehicle's wipers are active.</p>
+</li>
+
+      <li class="icon-graph-upward">
+  <h4>Trend Analysis</h4>
+  <p>With fleet data securely stored for up to two years you can run historical reports to uncover insightful trends, support investigations and extrapolate reliable forecasts. Cloud-based storage is regularly backed up and replicated.</p>
+</li>
+
+      <li class="icon-satellite">
+  <h4>Satellite View</h4>
+  <p>Get valuable insight on map locations with the most current and comprehensive satellite imagery commercially available. Includes both Streetside and Birds Eye views for extra detail. New images added daily. </p>
+</li>
+
+      <li class="icon-map-marker">
+  <h4>Your Map. Your Way.</h4>
+  <p>Mark your map with markers (also referred to as POIs or landmarks) to identify areas of interest such as depots, customers, jobsites or prohibited locations. Filter the map view to show specific marker types.  </p>
+</li>
+
+      <li class="icon-satellite">
+  <h4>Custom Map Overlays</h4>
+  <p>Show inter&shy;active GIS data (such as power or sewer lines, land use grids or parcel data) as a map layer. Supports ESRI Shapefile, MapInfo MID/MIF, Autodesk DXF).</p>
+</li>
+
+      <li class="icon-clipboard-game-plan">
+  <h4>Asset Utilization</h4>
+  <p>By monitoring all high-value assets you’ll know quickly which equipment could be getting
+    you a better return. Relocate or sell unused assets, and improve the ROI on what
+    you’ve got.</p>
+</li>
+
+      <li class="icon-acceleration">
+  <h4>Smart Dispatch</h4>
+  <p>Quickly locate and dispatch the nearest mobile worker with the right skills and vehicle for the job. Filter by attributes or tags and sort by distance. Right-sized dispatch reduces per-mile costs and double-handling of jobs.</p>
+</li>
+
+      <li class="icon-time-past">
+  <h4>Route History</h4>
+  <p>Replay one or more vehicle's route history for specific dates and follow the actual route taken by drivers. Displays specific events as part of the route replay, such as speeding or stops, and shows history alongside other drivers.</p>
+</li>
+
+      <li class="icon-search">
+  <h4>Search Anything</h4>
+  <p>Locate assets of interest quicker using the powerful search function that automatically updates the map based on your query. Easily find any vehicle, driver, location or tagged group for easier management of large fleets.</p>
+</li>
+
+      <li class="icon-user">
+  <h4>Real-time Collaboration</h4>
+  <p>Securely share a restricted view of your fleet activities to outside contractors or third parties. Set limits on what data can be seen and for how long. Ideal for work order confirmation, storm recovery or disaster response work.</p>
+</li>
+
+      <li class="icon-shuffle">
+  <h4>Automated Scripts</h4>
+  <p>Your fleet data has greater value when it's part of a connected solution. Telogis Fleet allows you to build custom workflow scripts that can be triggered based on multiple conditions.</p>
+</li>
+
+      <li class="icon-web-page-user">
+  <h4>Flexible Labelling</h4>
+  <p>Not every fleet is the same. Telogis Fleet includes a flexible terminology module that allows you to localize key elements of the user interface so it reflects your business more closely. For example, change driver to field technician or vehicle to crane.</p>
+</li>
+
+      <li class="icon-globe">
+  <h4>Time Zones/Languages</h4>
+  <p>Go global with Telogis Fleet multiple language support including Portuguese, Spanish, Chinese and Arabic. Tracked assets can be tagged to specific time zones for more accurate reporting. </p>
+</li>
+
+      <li class="icon-time-past">
+  <h4>What Happened Here?</h4>
+  <p>A powerful tool for creating a detailed window on historical events. Improve the speed and efficiency of internal investigations for damage claims or accidents, easily replaying the sequence of events.</p>
+</li>
+
+      <li class="icon-hierarchy">
+  <h4>Comprehensive Platform Approach</h4>
+  <p>Combine all your mobile workforce software on a single platform for improved operational
+    efficiency and data sharing. A true end-to-end connected intelligence platform.</p>
+</li>
+
+      <li class="icon-id-badge">
+        <h4>Driver ID</h4>
+        <p>
+          Each driver gets a unique key fob, required for each journey. Report on vehicle behavior by
+          assigned driver to isolate training opportunities.
+        </p>
+      </li>
+      <li class="icon-graph-line">
+        <h4>Fuel Card Tracking</h4>
+        <p>
+          Track fuel card usage and automatically identify suspicious transactions using smart
+          algorithms that minimize fuel card fraud.
+        </p>
+      </li>
+      <li class="icon-clipboard-stopwatch">
+        <h4>Hours of Service</h4>
+        <p>
+          Setup hour tracking to manage legal driving hours and improve the accuracy of trip scheduling
+          to keep drivers within legal HOS limits.
+        </p>
+      </li>
+      <li class="icon-clipboard-game-plan">
+        <h4>Asset Tracking</h4>
+        <p>
+          Monitor and manage all types of mobile equipment to improve safety, security and utilization.
+          AEMP compatible.
+        </p>
+      </li>
+      <li class="icon-chip">
+        <h4>Easy Hardware</h4>
+        <p>
+          Everything from factory fitted (such as GM’s OnStar) to aftermarket hardware and Garmin
+          integration &ndash; we’ve made it super easy to start tracking today.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="verisol_section">
+  <div class="content-wrapper-wide">
+    <div class="verisol_sub-section -spacey">
+      <div class="verisol_graphic -devices"></div>
+    </div>
+    <div class="verisol_sub-section">
+      <h2>Get started</h2>
+      <p class="verisol_bigtext">
+        Get a free demo and see how you can help achieve positive ROI <strong>within 120 days.</strong>
+      </p>
+    </div>
+    <div class="verisol_sub-section">
+      <a href="https://www.fleetmatics.com/reveal-demo" class="verisol_button -arrow">Request demo</a>
+    </div>
+  </div>
+</section>
+
+<footer class="VerizonSolutionsFooter">
+  <div class="verisol_ultrawide">
+      <img src="/images/logo-fleetmatics-reversed.svg" class="_logo -fleetmatics" alt="Fleetmatics" />
+    <div class="_copyright">
+      Copyright © 2017 Verizon. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+
+
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/slick/slick.min.js"></script>
+    <script src="/javascripts/verizon-solutions.js"></script>
+  </body>
+</html>

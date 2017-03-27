@@ -1,0 +1,4 @@
+source 'https://rubygems.org'
+
+# Use Font Custom to generate custom icon font from SVG icons
+gem "fontcustom"

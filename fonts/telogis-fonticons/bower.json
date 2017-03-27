@@ -1,0 +1,20 @@
+{
+  "name": "telogis-fonticons",
+  "version": "1.1.0",
+  "authors": [
+    "Michael Groufsky <michael.groufsky@telogis.com>"
+  ],
+  "description": "Custom icon font for the Telogis websites.",
+  "main": [
+    "dist/_fonticons-rails.scss",
+    "dist/fonticons.eot",
+    "dist/fonticons.svg",
+    "dist/fonticons.ttf",
+    "dist/fonticons.woff"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "Copyright",
+  "private": true
+}

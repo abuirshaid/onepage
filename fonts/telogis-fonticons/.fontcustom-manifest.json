@@ -1,0 +1,318 @@
+{
+  "checksum": {
+    "previous": "80a5d7682b5b84501d68f27637279e2900459d51d619091678a419aae31ac2d2",
+    "current": "80a5d7682b5b84501d68f27637279e2900459d51d619091678a419aae31ac2d2"
+  },
+  "fonts": [
+    "dist/fonticons.ttf",
+    "dist/fonticons.svg",
+    "dist/fonticons.woff",
+    "dist/fonticons.eot"
+  ],
+  "glyphs": {
+    "abs": {
+      "codepoint": 61704,
+      "source": "icons/abs.svg"
+    },
+    "acceleration": {
+      "codepoint": 61705,
+      "source": "icons/acceleration.svg"
+    },
+    "airbag": {
+      "codepoint": 61706,
+      "source": "icons/airbag.svg"
+    },
+    "alert": {
+      "codepoint": 61707,
+      "source": "icons/alert.svg"
+    },
+    "box-alert": {
+      "codepoint": 61708,
+      "source": "icons/box-alert.svg"
+    },
+    "box-check": {
+      "codepoint": 61709,
+      "source": "icons/box-check.svg"
+    },
+    "calendar": {
+      "codepoint": 61710,
+      "source": "icons/calendar.svg"
+    },
+    "calendar-stopwatch": {
+      "codepoint": 61711,
+      "source": "icons/calendar-stopwatch.svg"
+    },
+    "chain-link": {
+      "codepoint": 61712,
+      "source": "icons/chain-link.svg"
+    },
+    "chip": {
+      "codepoint": 61713,
+      "source": "icons/chip.svg"
+    },
+    "clear-night": {
+      "codepoint": 61714,
+      "source": "icons/clear-night.svg"
+    },
+    "clipboard-chart-pie": {
+      "codepoint": 61715,
+      "source": "icons/clipboard-chart-pie.svg"
+    },
+    "clipboard-check": {
+      "codepoint": 61716,
+      "source": "icons/clipboard-check.svg"
+    },
+    "clipboard-game-plan": {
+      "codepoint": 61717,
+      "source": "icons/clipboard-game-plan.svg"
+    },
+    "clipboard-stopwatch": {
+      "codepoint": 61718,
+      "source": "icons/clipboard-stopwatch.svg"
+    },
+    "clipboard-survey": {
+      "codepoint": 61719,
+      "source": "icons/clipboard-survey.svg"
+    },
+    "clock-alarm": {
+      "codepoint": 61720,
+      "source": "icons/clock-alarm.svg"
+    },
+    "clock-basic": {
+      "codepoint": 61721,
+      "source": "icons/clock-basic.svg"
+    },
+    "clock-watch": {
+      "codepoint": 61722,
+      "source": "icons/clock-watch.svg"
+    },
+    "compass": {
+      "codepoint": 61723,
+      "source": "icons/compass.svg"
+    },
+    "def-drop": {
+      "codepoint": 61724,
+      "source": "icons/def-drop.svg"
+    },
+    "def-level": {
+      "codepoint": 61725,
+      "source": "icons/def-level.svg"
+    },
+    "def-tick": {
+      "codepoint": 61726,
+      "source": "icons/def-tick.svg"
+    },
+    "device-calculator": {
+      "codepoint": 61727,
+      "source": "icons/device-calculator.svg"
+    },
+    "device-desktop": {
+      "codepoint": 61728,
+      "source": "icons/device-desktop.svg"
+    },
+    "device-laptop": {
+      "codepoint": 61729,
+      "source": "icons/device-laptop.svg"
+    },
+    "device-mobile": {
+      "codepoint": 61730,
+      "source": "icons/device-mobile.svg"
+    },
+    "device-mobile-web": {
+      "codepoint": 61731,
+      "source": "icons/device-mobile-web.svg"
+    },
+    "device-sms": {
+      "codepoint": 61732,
+      "source": "icons/device-sms.svg"
+    },
+    "doc-arrow": {
+      "codepoint": 61733,
+      "source": "icons/doc-arrow.svg"
+    },
+    "eclipse": {
+      "codepoint": 61734,
+      "source": "icons/eclipse.svg"
+    },
+    "fuel-pump": {
+      "codepoint": 61771,
+      "source": "icons/fuel-pump.svg"
+    },
+    "gauge": {
+      "codepoint": 61770,
+      "source": "icons/gauge.svg"
+    },
+    "gears": {
+      "codepoint": 61735,
+      "source": "icons/gears.svg"
+    },
+    "globe": {
+      "codepoint": 61736,
+      "source": "icons/globe.svg"
+    },
+    "graph-bar": {
+      "codepoint": 61737,
+      "source": "icons/graph-bar.svg"
+    },
+    "graph-line": {
+      "codepoint": 61738,
+      "source": "icons/graph-line.svg"
+    },
+    "graph-upward": {
+      "codepoint": 61739,
+      "source": "icons/graph-upward.svg"
+    },
+    "hand-pointer": {
+      "codepoint": 61740,
+      "source": "icons/hand-pointer.svg"
+    },
+    "hierarchy": {
+      "codepoint": 61741,
+      "source": "icons/hierarchy.svg"
+    },
+    "id-badge": {
+      "codepoint": 61742,
+      "source": "icons/id-badge.svg"
+    },
+    "light-bulb-flourescent": {
+      "codepoint": 61743,
+      "source": "icons/light-bulb-flourescent.svg"
+    },
+    "light-bulb-incandescent": {
+      "codepoint": 61744,
+      "source": "icons/light-bulb-incandescent.svg"
+    },
+    "lock-closed": {
+      "codepoint": 61745,
+      "source": "icons/lock-closed.svg"
+    },
+    "map-marker": {
+      "codepoint": 61746,
+      "source": "icons/map-marker.svg"
+    },
+    "map-marker-landmark": {
+      "codepoint": 61749,
+      "source": "icons/map-marker-landmark.svg"
+    },
+    "megaphone": {
+      "codepoint": 61750,
+      "source": "icons/megaphone.svg"
+    },
+    "messaging": {
+      "codepoint": 61751,
+      "source": "icons/messaging.svg"
+    },
+    "newspaper": {
+      "codepoint": 61752,
+      "source": "icons/newspaper.svg"
+    },
+    "oil-can": {
+      "codepoint": 61753,
+      "source": "icons/oil-can.svg"
+    },
+    "pie-chart": {
+      "codepoint": 61754,
+      "source": "icons/pie-chart.svg"
+    },
+    "play": {
+      "codepoint": 61773,
+      "source": "icons/play.svg"
+    },
+    "rain-umbrella": {
+      "codepoint": 61755,
+      "source": "icons/rain-umbrella.svg"
+    },
+    "rotate": {
+      "codepoint": 61756,
+      "source": "icons/rotate.svg"
+    },
+    "satellite": {
+      "codepoint": 61757,
+      "source": "icons/satellite.svg"
+    },
+    "search": {
+      "codepoint": 61758,
+      "source": "icons/search.svg"
+    },
+    "seatbelt": {
+      "codepoint": 61759,
+      "source": "icons/seatbelt.svg"
+    },
+    "shuffle": {
+      "codepoint": 61760,
+      "source": "icons/shuffle.svg"
+    },
+    "sitemap": {
+      "codepoint": 61761,
+      "source": "icons/sitemap.svg"
+    },
+    "stopwatch": {
+      "codepoint": 61762,
+      "source": "icons/stopwatch.svg"
+    },
+    "time-future": {
+      "codepoint": 61763,
+      "source": "icons/time-future.svg"
+    },
+    "time-past": {
+      "codepoint": 61764,
+      "source": "icons/time-past.svg"
+    },
+    "user": {
+      "codepoint": 61772,
+      "source": "icons/user.svg"
+    },
+    "web-page-error": {
+      "codepoint": 61765,
+      "source": "icons/web-page-error.svg"
+    },
+    "web-page-graph-bar": {
+      "codepoint": 61766,
+      "source": "icons/web-page-graph-bar.svg"
+    },
+    "web-page-graph-line": {
+      "codepoint": 61767,
+      "source": "icons/web-page-graph-line.svg"
+    },
+    "web-page-locked": {
+      "codepoint": 61768,
+      "source": "icons/web-page-locked.svg"
+    },
+    "web-page-user": {
+      "codepoint": 61769,
+      "source": "icons/web-page-user.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": "fontcustom.yml",
+    "css_selector": ".icon-{{glyph}}",
+    "debug": false,
+    "font_ascent": 512,
+    "font_descent": 0,
+    "font_design_size": 32,
+    "font_em": 512,
+    "font_name": "fonticons",
+    "force": false,
+    "input": {
+      "templates": "icons",
+      "vectors": "icons"
+    },
+    "no_hash": true,
+    "output": {
+      "css": "dist",
+      "fonts": "dist",
+      "preview": "preview"
+    },
+    "preprocessor_path": "telogis-fonticons/dist",
+    "quiet": false,
+    "templates": [
+      "scss-rails",
+      "preview"
+    ]
+  },
+  "templates": [
+    "dist/_fonticons-rails.scss",
+    "preview/fonticons-preview.html"
+  ]
+}

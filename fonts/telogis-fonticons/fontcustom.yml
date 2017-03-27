@@ -1,0 +1,56 @@
+# This file contains the config settings for generating the custom icon font.
+# Run `fontcustom compile` in this directory to regenerate the font files.
+#
+# Paths:
+#   icons/svg -- source files for the font glyphs
+#   dist/fonts -- output font files
+#   dist/_fonticons-rails.css -- output stylesheet
+#   preview/fonticons-preview.html -- autgenerated preview page
+
+
+# --------------------------------------------------------------------------- #
+# Project Info
+#   Defaults shown. Learn more about these options by running
+#   `fontcustom help` or visiting <http://fontcustom.com>.
+# --------------------------------------------------------------------------- #
+
+font_name: fonticons
+font_design_size: 32
+font_em: 512
+font_ascent: 512
+font_descent: 0
+css_selector: .icon-{{glyph}}
+preprocessor_path: telogis-fonticons/dist
+autowidth: false
+no_hash: true
+debug: false
+quiet: false
+
+
+# --------------------------------------------------------------------------- #
+# Input Paths
+# --------------------------------------------------------------------------- #
+
+input:
+  vectors: icons  # required
+
+
+# --------------------------------------------------------------------------- #
+# Output Paths
+# --------------------------------------------------------------------------- #
+
+output:
+  fonts: dist  # required
+  preview: preview
+
+
+# --------------------------------------------------------------------------- #
+# Templates
+#   Included in Font Custom: preview, css, scss, scss-rails
+#   Custom templates should be saved in the INPUT[:templates] directory and
+#   referenced by their baserame.
+# --------------------------------------------------------------------------- #
+
+templates:
+ - scss-rails
+ - preview

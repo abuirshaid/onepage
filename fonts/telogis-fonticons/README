@@ -1,0 +1,57 @@
+<h1 id="fonticons">Fonticons</h1>
+
+<p>A custom font comprising various icons used on the Telogis websites.  Includes selected icons from the
+<a href="http://iconify.it/preview/">Iconified</a> icon set, plus various custom ones created by us.  See the full
+set of icons <a href="/fonts/telogis-fonticons/preview/fonticons-preview.html">here</a>.</p>
+
+<h2 id="using-fonticons-in-a-project">Using fonticons in a project</h2>
+
+<p>This is a <a href="http://bower.io/">Bower</a> package.  To add it to a project, run:</p>
+
+<pre><code>bower install git@github.com:telogis/fonticons.git
+</code></pre>
+
+<p>For Middleman projects, make sure the following lines are in <code>config.rb</code>:</p>
+
+<pre><code>sprockets.append_path File.join root, 'vendor/assets/bower_components'
+sprockets.import_asset 'telogis-fonticons'
+</code></pre>
+
+<p>(Where <code>'vendor/assets/bower_components'</code> is the location that Bower components are installed to.)</p>
+
+<p>Then add the fonticons css to your stylesheet:</p>
+
+<pre><code>@import 'telogis-fonticons/dist/fonticons-rails';
+</code></pre>
+
+<p>Note: despite the name, this file is not rails-specific.</p>
+
+<p>See the <a href="https://middlemanapp.com/advanced/asset_pipeline/#sprockets-import-path">Middleman docs</a> for more
+info on using Bower components within the Sprockets framework.</p>
+
+<h2 id="modifying-the-iconset">Modifying the iconset</h2>
+
+<p>The icon set is built using <a href="http://fontcustom.com/">Font Custom</a>.  To add an icon to the set (or modify
+an existing one), place the svg file in the <code>icons</code> directory then run:</p>
+
+<pre><code>fontcustom compile
+</code></pre>
+
+<p>(This needs the <code>fontcustom</code> gem to be already installed; run <code>bundle install</code> to install it.)</p>
+
+<p>The resulting stylesheets and font files will be found in the <code>dist</code> directory. You will then have to
+publish the changes – use <a href="http://bower.io/docs/api/#version"><code>bower version</code></a>.  Recommended
+version increments:</p>
+
+<ul>
+  <li><strong>major</strong>: Increment this when the icon set changes significantly, i.e. icons are removed/renamed.</li>
+  <li><strong>minor</strong>: Increment this each time an icon is added.</li>
+  <li><strong>patch</strong>: Increment this when making updates to an existing icon's svg file.</li>
+</ul>
+
+<h2 id="preview-page">Preview page</h2>
+
+<p>An preview page of all the icons in the set is generated when the font is compiled.  You can find it in the
+<code>preview</code> directory, or visit the url <a href="http://telogis.github.io/fonticons/preview/fonticons-preview.html">http://telogis.github.io/fonticons/preview/fonticons-preview.html</a>.
+This url is made available through <a href="https://pages.github.com/">GitHub Pages</a>, so you will need to reset the
+<code>gh-pages</code> branch to master each time the font is updated in order to see the latest version.</p>
