@@ -8,7 +8,7 @@ button.slick-prev.slick-arrow {
     height: 30px;
     position: absolute;
     bottom: 0;
-    z-index: 10;
+    z-index: 9;
     border: solid 1px #999;
     border-radius: 20px;
     color: #999!important;
@@ -19,7 +19,6 @@ button.slick-next.slick-arrow:hover,
 button.slick-prev.slick-arrow:hover {
     background-color: #e42e32;
     border-color: #e42e32 !important;
-    ;
     color: #fff !important;
 }
 
@@ -62,12 +61,9 @@ button.slick-next.slick-arrow {
     border-radius: 4px;
     padding: 0.5em 0.5em;
     height: 37px;
+    color: #999;
     background: #fff;
     border: 1px solid #e2e5e8;
-}
-
-.popup-select {
-    color: #999;
 }
 
 .popup-select:active,
@@ -82,14 +78,15 @@ button.slick-next.slick-arrow {
     outline: #4C89F4 solid 1px;
 }
 
-.VerizonSolutionsPopoverForm ._panel ._close {
-    position: relative;
-    float: right;
-}
-
 .VerizonSolutionsPopoverForm ._panel {
     background-color: white;
     border-radius: 4px;
+}
+
+.VerizonSolutionsPopoverForm ._panel ._close {
+    position: relative;
+    float: right;
+    line-height: 1.8em;
 }
 
 .VerizonSolutionsPopoverForm ._panel ._button {
@@ -97,33 +94,10 @@ button.slick-next.slick-arrow {
     background-color: white;
     border: 1px solid #e42e32;
     border-radius: 4px;
-        margin-top: 0.6em;
-
-}
-
-.VerizonSolutionsPopoverForm ._panel ._close {
-    line-height: 1.8em;
+    margin-top: 0.6em;
 }
 
 button:active,
 input[type="submit"]:active {
     box-shadow: inset 0 0 12px #999;
 }
-/*
-button.slick-next.slick-arrow:focus,
-button.slick-prev.slick-arrow:focus {
-    outline: none;
-    border: 1px solid #e42e32;
-    color: #e42e32 !important;
-}
-
-button.slick-next.slick-arrow,
-button.slick-prev.slick-arrow {
-    color: #e42e32;
-    background-color: #fff;
-}
-
-.VerizonSolutionsPopoverForm ._panel ._button:focus .VerizonSolutionsPopoverForm ._panel ._button:active {
-    color: white;
-    background-color: #e42e32;
-}*/
